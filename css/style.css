@@ -160,6 +160,7 @@ button:hover{
     .ligne:last-child > :nth-child(2){ /*régulation des border*/
         border-top: solid;
         border-left:solid;
+        border-color: black;
         border-width: 1px;
     }
     .ligne:last-child > :last-child{
