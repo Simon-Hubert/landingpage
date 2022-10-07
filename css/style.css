@@ -147,3 +147,20 @@ button:hover{
         border-width: 1px;
     }
 }
+
+@media screen and (max-width: 380px){
+    nav ul{
+        flex-wrap: wrap;
+    }
+    .ligne{
+        flex-wrap: wrap;
+    }
+    .ligne:last-child > :nth-child(2){
+        border-top: solid;
+        border-left:solid;
+        border-width: 1px;
+    }
+    .ligne:last-child > :last-child{
+        border-left: none;
+    }
+}
