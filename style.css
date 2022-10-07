@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0% 5%;
+    background-color: rgb(237, 237, 237);
+    font-family: 'Roboto';
+}
+
+footer{
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    width: 100%; 
+    list-style: none;
+    padding: 0px;
+    display: flex;
+}
+
+li{
+    flex: 1;
+}
+
+h1{
+    color: white;
+    font-size: xx-large;
+    mix-blend-mode: difference;
+}
+
+p{
+    font-size: smaller;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    background-color: black;
+}
+
+button{
+    border-color: blue;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: white;
+    color: blue;
+    transition: 250ms;
+}
+button:hover{
+    color: white;
+    background-color: blue;
+    transition: 250ms;
+}
+
+
+.page{
+    padding: 10px 25px;
+    background-color: white;
+}
+
+.button-navbar{
+    background-color: aliceblue;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.list-network{
+    height: 100%;
+    align-items: center;
+}
+
+.ligne{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+}
+
+.ligne:first-child{
+    border-bottom: none;
+}
+
+.ligne:first-child .case{
+    padding: 5%;
+}
+
+.case{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2%;
+    flex: 1;
+}
+.case:first-child{
+    border-left: solid;
+    border-left-width: 1px;
+}
+
+.case:nth-child(even){
+    background-color: aliceblue;
+    text-align: right;
+    color: rgb(105, 105, 255);
+}
+
+.ligne:first-child > :first-child{
+    flex: 2;
+}
+
+.ligne:first-child > :nth-child(2){
+    background-color: white;
+    background-image: url("../images/image.jpeg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+@media screen and (max-width: 800px){
+    nav ul{
+        flex-wrap: wrap;
+    }
+    .list{
+        flex-wrap: wrap;
+    }
+}
