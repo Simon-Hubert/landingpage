@@ -131,5 +131,10 @@ button:hover{
 }
 
 @media screen and (max-width: 800px){
-    
+    nav ul{
+        flex-wrap: wrap;
+    }
+    .list{
+        flex-wrap: wrap;
+    }
 }
