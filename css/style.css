@@ -28,7 +28,7 @@ h1{
     color: white;
     font-size: xx-large;
     mix-blend-mode: difference; /*pour avoir l'effet d'inversion de la couleur du
-    texte par rapport au bg*/
+    texte par rapport au background*/
 }
 
 p{
@@ -55,7 +55,7 @@ button{
 button:hover{
     color: white;
     background-color: blue;
-    cursor: pointer;
+    cursor: pointer; /*pour signaler que l'on peut cliquer*/
     transition: 250ms; /*fade in lorsqu'on :hover*/
 }
 
