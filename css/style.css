@@ -5,7 +5,7 @@
 body{
     margin: 0% 5%;
     background-color: rgb(237, 237, 237);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 footer{
@@ -27,7 +27,8 @@ li{
 h1{
     color: white;
     font-size: xx-large;
-    mix-blend-mode: difference;
+    mix-blend-mode: difference; /*pour avoir l'effet d'inversion de la couleur du
+    texte par rapport au bg*/
 }
 
 p{
@@ -49,12 +50,13 @@ button{
     padding: 10px 20px;
     background-color: white;
     color: blue;
-    transition: 250ms;
+    transition: 250ms; /*fade out lorsque le :hover est fini*/
 }
 button:hover{
     color: white;
     background-color: blue;
-    transition: 250ms;
+    cursor: pointer;
+    transition: 250ms; /*fade in lorsqu'on :hover*/
 }
 
 
@@ -86,11 +88,11 @@ button:hover{
     border-color: black;
     border-style: solid;
     border-width: 1px;
-    border-left: none;
+    border-left: none; /*les border left et right seron couverte par les cases*/
     border-right: none;
 }
 
-.ligne:first-child{
+.ligne:first-child{ /*pour que les border marchent bien*/
     border-bottom: none;
 }
 
@@ -102,17 +104,17 @@ button:hover{
     border-color: black;
     border-style: solid;
     border-width: 1px;
-    border-top: none;
+    border-top: none;   /*border top et bottom déjà couverte par .ligne*/
     border-bottom: none;
-    border-left: none;
+    border-left: none; /*pour ne pas avoir de superposition*/
     text-align: left;
     background-color: white;
     border-radius: 10px;
     padding: 2%;
     flex: 1;
 }
-.case:first-child{
-    border-left: solid;
+.case:first-child{  /*pour que les boder marchent bien*/
+    border-left: solid; 
     border-left-width: 1px;
 }
 
@@ -141,21 +143,21 @@ button:hover{
     .ligne{
         flex-wrap: wrap;
     }
-    .ligne:last-child > :last-child{
+    .ligne:last-child > :last-child{ /*regulation des border*/
         border-top: solid;
         border-left:solid;
         border-width: 1px;
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px){ /*responsive pour mon téléphone en particulier*/
     nav ul{
         flex-wrap: wrap;
     }
     .ligne{
         flex-wrap: wrap;
     }
-    .ligne:last-child > :nth-child(2){
+    .ligne:last-child > :nth-child(2){ /*régulation des border*/
         border-top: solid;
         border-left:solid;
         border-width: 1px;
