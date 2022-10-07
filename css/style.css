@@ -134,7 +134,12 @@ button:hover{
     nav ul{
         flex-wrap: wrap;
     }
-    .list{
+    .ligne{
         flex-wrap: wrap;
+    }
+    .ligne:last-child > :last-child{
+        border-top: solid;
+        border-left:solid;
+        border-width: 1px;
     }
 }
